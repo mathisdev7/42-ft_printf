@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 00:56:26 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/09 05:27:32 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/09 06:34:41 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_print_format(va_list args, char format, int print_len, void *p)
 	else if (format == 'p')
 	{
 		p = va_arg(args, void *);
-		print_len = ft_putstr_fd("0x", 1) + ft_put_ptr(p);
+		print_len = ft_put_ptr(p, 0);
 	}
 	else if (format == 'd' || format == 'i')
 		print_len = ft_putnbr_fd(va_arg(args, int), 1);
