@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 05:20:15 by mazeghou          #+#    #+#             */
-/*   Updated: 2024/11/09 04:39:52 by mazeghou         ###   ########.fr       */
+/*   Updated: 2024/11/09 06:40:54 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,3 @@ int	ft_putnbr_fd(int n, int fd)
 	print_len += 1;
 	return (print_len);
 }
-
-
